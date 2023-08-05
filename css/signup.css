@@ -1,6 +1,7 @@
 * {
     margin: 0px;
 }
+
 .all {
     display: flex;
 }
@@ -11,19 +12,143 @@
     justify-content: center;
     gap: 20px;
     align-items: center;
-    width: 40%;
+    width: 33%;
     height: 100vh;
-    background-color:  #00ec99;
+    background-color: #E4CD6A;
+}
+
+.icon {
+    width: 250px;
+    height: 280px;
+}
+
+h1,
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.cad {
+    color: #E4CD6A;
+}
+
+.btn_entrar {
+    width: 120px;
+    height: 35px;
+    border: 2px solid #E285FF;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #E285FF;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn_entrar:hover {
+    background-color: #E285FF;
+    color: white;
 }
 
 .right {
     background-color: white;
-    width: 60%;
-}
-.icon {
-    width: 400px;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
-h1, p {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.form-control {
+    background-color: #EAEAEA;
+    font-size: 12px;
+}
+.input-group {
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+}
+.input-group-text {
+    background-color: #EAEAEA;
+}
+span img {
+    width: 15px;
+}
+
+.btn_cadastrar {
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E285FF;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.btn_cadastrar:hover {
+    border: 2px solid #E285FF;
+    background-color: transparent;
+    color: #E285FF;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    width: 190px;
+}
+
+.line p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.accounts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bg {
+    background-color: #EAEAEA;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #616161;
+    cursor: pointer;
+}
+
+.bg:hover {
+    background-color: #616161;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #EAEAEA;
+    outline: 0;
 }
