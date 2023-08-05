@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+}
+.all {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+    background-color:  #00ec99;
+}
+
+.right {
+    background-color: white;
+    width: 60%;
+}
+.icon {
+    width: 400px;
+}
+
+h1, p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
