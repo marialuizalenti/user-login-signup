@@ -32,7 +32,7 @@ h1 {
     font-weight: 700;
 }
 
-p {
+.all p {
     font-size: 15px;
     text-align: center;
 }
@@ -151,4 +151,8 @@ hr {
     box-shadow: 0 0 0 0;
     border: 1px solid #EAEAEA;
     outline: 0;
+}
+
+.icon_login {
+    width: 370px;
 }
