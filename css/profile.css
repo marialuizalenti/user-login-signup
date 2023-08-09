@@ -1,0 +1,23 @@
+#delete_account {
+    color: grey;
+    display: block;
+    margin-top: 20px;
+}
+#signout {
+    color: red;
+}
+
+.form-control {
+    background-color: #EAEAEA;
+    font-size: 12px;
+}
+.input-group {
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+}
+.input-group-text {
+    background-color: #EAEAEA;
+}
