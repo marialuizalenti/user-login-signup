@@ -156,3 +156,8 @@ hr {
 .icon_login {
     width: 370px;
 }
+
+#msg_error {
+    color: red;
+    font-size: 12px;
+}

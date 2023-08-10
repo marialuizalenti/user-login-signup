@@ -27,25 +27,26 @@
         <div class="right">
             <h1 class="cad">Cadastre-se</h1>
             <p>Crie uma conta e tenha acesso ao site</p>
-            <form action="">
+            <form action="" id="datas">
                 <div class="content">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/avatar.svg" alt="">
                         </span>
-                        <input type="text" class="form-control" placeholder="Nome completo"
-                            aria-describedby="addon-wrapping">
+                        <input type="text" class="form-control" placeholder="Nome completo" id="name"
+                            aria-describedby="addon-wrapping" minlength="3" required>
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/email.svg" alt="">
                         </span>
-                        <input type="email" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/locked.svg" alt="">
                         </span>
                         <input type="password" class="form-control" placeholder="Senha"
-                            aria-describedby="addon-wrapping">
+                            aria-describedby="addon-wrapping" id="password" minlength="6" required>
                     </div>
+                    <span id="msg_error"></span>
                 </div>
                 <div class="sub">
                     <input class="btn_cadastrar" type="submit" value="Cadastre-se"></button>
@@ -67,6 +68,7 @@
 
         </div>
     </div>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
