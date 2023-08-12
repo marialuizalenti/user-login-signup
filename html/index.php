@@ -1,3 +1,7 @@
+<?php
+include('../session/conn.php');
+include('../session/login.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,24 +26,24 @@
             <p>Cadastre-se agora e tenha 
             </br>acesso ao site!</p>
             <img class="icon_login" src="../imgs/login.png" alt="">
-            <button class="btn_entrar" onclick="window.location.href = 'signup.html'">Cadastre-se</button>
+            <button class="btn_entrar" onclick="window.location.href = 'signup.php'">Cadastre-se</button>
         </div>
 
         <div class="right">
             <h1 class="cad">Entrar</h1>
             <p>Preencha seu e-mail e senha 
                 para acessar sua conta!</p>
-            <form action="">
+            <form action="" method="post">
                 <div class="content">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/email.svg" alt="">
                         </span>
-                        <input type="email" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping">
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping">
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/locked.svg" alt="">
                         </span>
-                        <input type="password" class="form-control" placeholder="Senha"
+                        <input type="password" name="password" class="form-control" placeholder="Senha"
                             aria-describedby="addon-wrapping">
                     </div>
                 </div>

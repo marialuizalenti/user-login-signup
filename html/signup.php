@@ -1,3 +1,7 @@
+<?php
+include('../session/conn.php');
+include('../session/signup.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,29 +25,29 @@
             <h1>Já possui uma conta?</h1>
             <p>Entre e acesse </br>sua conta!</p>
             <img class="icon" src="../imgs/signup.png" alt="">
-            <button class="btn_entrar" onclick="window.location.href = 'index.html'">Entrar</button>
+            <button class="btn_entrar" onclick="window.location.href = 'index.php'">Entrar</button>
         </div>
 
         <div class="right">
             <h1 class="cad">Cadastre-se</h1>
             <p>Crie uma conta e tenha acesso ao site</p>
-            <form action="" id="datas">
+            <form action="" id="datas" method="post">
                 <div class="content">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/avatar.svg" alt="">
                         </span>
-                        <input type="text" class="form-control" placeholder="Nome completo" id="name"
+                        <input type="text" name="name" class="form-control" placeholder="Nome completo" id="name"
                             aria-describedby="addon-wrapping" minlength="3" required>
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/email.svg" alt="">
                         </span>
-                        <input type="email" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping" required>
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" aria-describedby="addon-wrapping" required>
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/locked.svg" alt="">
                         </span>
-                        <input type="password" class="form-control" placeholder="Senha"
+                        <input type="password" name="password" class="form-control" placeholder="Senha"
                             aria-describedby="addon-wrapping" id="password" minlength="6" required>
                     </div>
                     <span id="msg_error"></span>

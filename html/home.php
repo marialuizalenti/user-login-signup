@@ -1,3 +1,6 @@
+<?php
+include('../session/protect.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,15 +23,19 @@
             <div class="profile">
                 <img src="../imgs/photo.png" alt="profile photo">
                 <div class="update">
-                    <p>John Snow</p>
-                    <img src="../icons/pencil.png" alt="pencil icon" onclick="window.location.href = 'profile.html'">
+                    <p>
+                        <?= $_SESSION['name'] ?>
+                    </p>
+
+                    <img src="../icons/pencil.png" alt="pencil icon" onclick="window.location.href = 'profile.php'">
                 </div>
             </div>
             <div class="secs">
                 <ul class="list-group">
                     <li class="list-group-item">
                         <img src="../icons/home.png" alt="">
-                        <label class="form-check-label" for="firstCheckbox" onclick="window.location.href = 'home.html'">Home</label>
+                        <label class="form-check-label" for="firstCheckbox"
+                            onclick="window.location.href = 'home.php'">Home</label>
                     </li>
                     <li class="list-group-item">
                         <img src="../icons/book.png" alt="">

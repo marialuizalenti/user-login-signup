@@ -1,3 +1,9 @@
+<?php
+
+include('../session/protect.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,8 +27,10 @@
             <div class="profile">
                 <img src="../imgs/photo.png" alt="profile photo">
                 <div class="update">
-                    <p>John Snow</p>
-                    <img src="../icons/pencil.png" alt="pencil icon" onclick="window.location.href = 'profile.html'">
+                    <p>
+                        <?= $_SESSION['name'] ?>
+                    </p>
+                    <img src="../icons/pencil.png" alt="pencil icon" onclick="window.location.href = 'profile.php'">
                 </div>
             </div>
             <div class="secs">
@@ -30,7 +38,7 @@
                     <li class="list-group-item">
                         <img src="../icons/home.png" alt="">
                         <label class="form-check-label" for="firstCheckbox"
-                            onclick="window.location.href = 'home.html'">Home</label>
+                            onclick="window.location.href = 'home.php'">Home</label>
                     </li>
                     <li class="list-group-item">
                         <img src="../icons/book.png" alt="">
@@ -79,8 +87,8 @@
                             aria-describedby="addon-wrapping" minlength="6" id="password"> 
                     </div>
                     <span id="msg_error"></span>
-                    <a id="delete_account" href="">deletar minha conta</a>
-                    <a href="" id="signout">sair</a>
+                    <a id="delete_account" href="../session/delete_account.php">deletar minha conta</a>
+                    <a href="../session/logout.php" id="signout">sair</a>
                 </div>
                 <div class="sub">
                     <input class="btn_cadastrar" type="submit" value="Salvar"></button>

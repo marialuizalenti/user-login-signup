@@ -7,7 +7,8 @@ document.getElementById("datas").addEventListener("submit", function(event) {
     if (!uppercase.test(password) || !lowercase.test(password) || !numbers.test(password)) {
         event.preventDefault();
         document.getElementById("msg_error").innerHTML = "A senha precisa conter letras minúsculas, maiúsculas e números!";
-    } else {
-        alert("Perfil alterado com sucesso!");
-    }
+    } 
+    // else {
+    //     alert("Perfil alterado com sucesso!");
+    // }
 });
