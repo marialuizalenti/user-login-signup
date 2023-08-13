@@ -67,23 +67,23 @@ include('../session/protect.php');
 
             <img src="../imgs/change_photo.png" alt="">
 
-            <form action="" id="datas">
+            <form action="" method="post">
                 <div class="datas">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/avatar.svg" alt="">
                         </span>
-                        <input type="text" class="form-control" placeholder="Novo nome"
+                        <input name="new_name" type="text" class="form-control" placeholder="Novo nome"
                             aria-describedby="addon-wrapping" minlength="3">
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/email.svg" alt="">
                         </span>
-                        <input type="email" class="form-control" placeholder="Novo e-mail" aria-describedby="addon-wrapping">
+                        <input name="new_email" type="email" class="form-control" placeholder="Novo e-mail" aria-describedby="addon-wrapping">
                     </div>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping"> <img src="../icons/locked.svg" alt="">
                         </span>
-                        <input type="password" class="form-control" placeholder="Nova senha"
+                        <input type="password" name="new_password" class="form-control" placeholder="Nova senha"
                             aria-describedby="addon-wrapping" minlength="6" id="password"> 
                     </div>
                     <span id="msg_error"></span>
